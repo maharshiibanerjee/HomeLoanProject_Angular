@@ -1,0 +1,90 @@
+<div class="content-wrapper center" style="width: 50%;">
+    <!-- <div class="content"> -->
+    <div>
+      <!-- <div class="container"> -->
+      <form #RegistrationForm = "ngForm" (ngSubmit)="register()">
+        <div class="container">
+          <h1>Personal Details</h1>
+          <p>Please fill in this form to apply for loan.</p>
+          <hr>
+          <p>
+         
+            <label for="uname" class="label"><b>UserName</b></label>
+            <input class="form-control" type="text" id="username" name="username"  [(ngModel)]="user.userName" #username="ngModel" required />
+         
+          <p>
+            <label for="password"><b>Password</b></label>
+            <input type="password" id="password" name="password" [(ngModel)]="user.password" #password="ngModel" required />
+          </p>
+        
+       
+         
+          <p>
+         
+            <label for="fname" class="label"><b>First Name:</b></label>
+            <input type="text" id="FirstName" name="FirstName" [(ngModel)]="user.firstName" #FirstName="ngModel" required/>
+          </p>
+         
+  
+          <p>
+            <label for="mname"><b>Middle Name</b></label>
+            <input type="text" id="mname" name="mname" [(ngModel)]="user.middleName" />
+          </p>
+
+          <p>
+            <label for="lname"><b>Last Name</b></label>
+            <input type="text" id="lname" name="lname"  [(ngModel)]="user.lastName" #lname="ngModel" required/>
+          </p>
+       
+  
+  
+          <p>
+            <label for="e"><b>Email</b></label>
+            <input type="text" id="e" name="e"  [(ngModel)]="user.emailId" #EmailId="ngModel" required/>
+          </p>
+          
+         
+  
+  
+          <p>
+            <label for="mno"><b>Mobile Number</b></label>
+            <input type="number" id="mno" name="mno" [(ngModel)]="user.phoneNumber" />
+          </p>
+         
+          <p>
+            <label for="dob"><b>DOB</b></label><br>
+            <input type="date" id="dob" name="dob" [(ngModel)]="user.dob" />
+          </p>
+        
+  
+          <p>
+            <label for="gender"><b>Gender:</b></label><br>
+            Male<input type="radio" value="male" id="gen" name="Gender" />
+            Female<input type="radio" value="female" id="gen" name="Gender" />
+          </p>
+         
+          <p>
+            <label for="nat"><b>Nationality</b></label>
+            <input type="text" id="nat" name="nat" [(ngModel)]="user.nationality" />
+          </p>
+        
+  
+          <p>
+            <label for="aadhar"><b>Aadhar Number</b></label>
+            <input type="number" id="aadhar" name="aadhar"  [(ngModel)]="user.aadharNo"/>
+          </p>
+        
+          <p>
+            <label for="pan"><b>Pan Number</b></label>
+            <input type="text" id="pan" name="pan" [(ngModel)]="user.panNo" />
+          </p>
+  
+          
+          <input class="btn btn-primary"  value="Save and Next" type="submit">
+        </div>
+  
+      
+     
+      </form>
+    </div>
+  </div>

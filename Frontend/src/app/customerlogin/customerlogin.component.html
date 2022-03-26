@@ -1,0 +1,27 @@
+<div class="content-wrapper center" >
+    <!-- <div class="content"> -->
+    <div >
+  
+      <form #loginform="ngForm" (ngSubmit)="login()">
+        <div class="container">
+          <h1>Login</h1>
+         
+       <p>
+            <label for="uname"><b>Username : </b></label>
+            <input type="text"  name="uname"  [(ngModel)]="user.emailId" />
+          </p>
+         
+  
+          <p>
+            <label for="pass"><b>Password : </b></label>
+            <input type="password" name="password"  [(ngModel)]="user.password" />
+          </p>
+        
+          <button class="btn btn-primary" type="submit" >Login</button>
+        </div>
+        
+    </form>
+
+   
+    </div>
+  </div>

@@ -1,0 +1,50 @@
+<body>
+  
+ <div class="header">
+      <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+         
+          <a class="pure-menu-heading"  href=""><b>Home Loan</b></a>
+          <div style="float:right">
+         
+            <button routerLink= "home" id ="home"  style='margin-right:16px' class="pure-menu-link">Home</button>
+              <button routerLink= "aboutus" id ="aboutus" style='margin-right:16px' class="pure-menu-link">About Us</button>
+              <button routerLink = "calculator" id="eligibilitycalculator" 
+              style='margin-right:16px' class="pure-menu-link">Calculator</button>
+              <button routerLink= "personaldetails" id ="personaldetails" style='margin-right:16px'>Application</button>
+              <div class="dropdown" style='margin-right:16px'>
+                <button ><a href="#" style='margin-right:16px' class="pure-menu-link">Login</a></button>
+                <div class="dropdown-content">
+                    <a routerLink="adminlogin">Admin</a>
+                    <a routerLink = "customerlogin">User</a>
+                </div>
+            </div>
+              <button routerLink="faq" id = "faq" style='margin-right:16px'>FAQ</button>
+              
+          </div>
+          <!-- <div *ngIf="message">
+              <a class="pure-menu-heading" href="">Home Loan</a>
+              <ul class="pure-menu-list">
+                  <li class="pure-menu-item pure-menu-selected"><a routerLink='Home' class="pure-menu-link">Home</a>
+                  </li>
+                  <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">About Us</a></li>
+                  <li class="pure-menu-item pure-menu-selected"><a href="" class="pure-menu-link">Apply</a></li>
+                  <li class="pure-menu-item pure-menu-selected"><a href=""
+                          class="pure-menu-link">Calculator</a></li>
+                  <li class="pure-menu-item pure-menu-selected">
+                      <a routerLink="" (click)='logout()' class="pure-menu-link">Logout</a>
+                  </li>
+                  <li class="pure-menu-item pure-menu-selected"><a href="" class="pure-menu-link">FAQ</a></li>
+              </ul>
+          </div> -->
+      </div>
+  </div>
+  
+
+  <router-outlet></router-outlet>
+
+ 
+  <!-- <div class="content-wrapper">
+<div class="footer l-box is-center ">
+  &copy; All rights reserved.
+</div>
+</div>-->
